@@ -12,13 +12,13 @@ DATETIME YEARS_SUB(DATETIME date, INT years)
 
 ## 参数说明
 
-`date`: 原始日期，类型为DATETIME 或者 DATE。
+`date`: 原始日期，类型为 DATETIME 或者 DATE。
 
-`years`: 需要减去的年数。该值可以为负数，但需满足date的年份减去years不能超过10000。假如date中的年份为2022，那么years不能小于-7979。同时，该值不能超过date中的年份，假如date中的年份为2022，那么years不能大于2022。
+`years`: 需要减去的年数。该值可以为负数，但需满足 `date` 的年份减去 `years` 不能超过 10000。假如 `date` 中的年份为 2022，那么 `years` 不能小于 -7979。同时，该值不能超过 `date` 中的年份，假如 `date` 中的年份为 2022，那么 `years` 不能大于 2022。
 
 ## 返回值说明
 
-返回值与参数date类型一致。如果计算出的结果年份超出范围[0, 9999]，则返回NULL。
+返回值与参数 `date` 类型一致。如果计算出的结果年份超出范围[0, 9999]，则返回 NULL。
 
 ## 示例
 
